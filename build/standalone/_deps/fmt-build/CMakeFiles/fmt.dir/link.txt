@@ -1,0 +1,2 @@
+/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/ar qc libfmt.a CMakeFiles/fmt.dir/src/format.cc.o CMakeFiles/fmt.dir/src/os.cc.o
+/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/ranlib libfmt.a

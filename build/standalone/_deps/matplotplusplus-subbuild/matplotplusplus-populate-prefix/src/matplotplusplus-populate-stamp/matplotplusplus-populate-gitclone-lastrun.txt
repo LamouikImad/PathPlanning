@@ -1,0 +1,15 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The download step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+method=git
+command=/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake;-P;/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-subbuild/matplotplusplus-populate-prefix/tmp/matplotplusplus-populate-gitclone.cmake
+source_dir=/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src
+work_dir=/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps
+repository=https://github.com/alandefreitas/matplotplusplus.git
+remote=origin
+init_submodules=TRUE
+recurse_submodules=--recursive
+submodules=
+CMP0097=NEW
+

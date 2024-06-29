@@ -1,0 +1,793 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.1.81 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/3.28.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-uFCQfn"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-uFCQfn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-uFCQfn'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_92476/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_92476.dir/build.make CMakeFiles/cmTC_92476.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-uFCQfn'
+        Building CXX object CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++   -v -o CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/g++
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92476.dir/'
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=3 -idirafter /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include -idirafter /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_92476.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fPIC -fstack-protector-strong -fno-strict-overflow -frandom-seed=3npghm6fqx --param=ssp-buffer-size=4 -o /tmp/nix-shell.Sqc5W6/ccCaax03.s
+        GNU C++17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.20-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include"
+        ignoring duplicate directory "/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include"
+        ignoring duplicate directory "/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include"
+        ignoring nonexistent directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"
+        ignoring duplicate directory "/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include"
+        ignoring duplicate directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include
+         /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include
+         /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//backward
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed
+         /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include
+        End of search list.
+        Compiler executable checksum: f5b68c6cb112a2f52a3f956ed0a25e71
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92476.dir/'
+         /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o /tmp/nix-shell.Sqc5W6/ccCaax03.s
+        GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41
+        COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_92476
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92476.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++  -v CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_92476 
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/g++
+        COLLECT_LTO_WRAPPER=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'cmTC_92476' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib' '-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92476.'
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell.Sqc5W6/ccz9vbK0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib64/ld-linux-x86-64.so.2 -o cmTC_92476 /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/lenovo/prep/cpp/outputs/out/lib -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'cmTC_92476' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib' '-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92476.'
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-uFCQfn'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include]
+          add: [/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include]
+          add: [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//backward]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+          add: [/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+        end of search list found
+        collapse include dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include] ==> [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include]
+        collapse include dir [/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include] ==> [/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include]
+        collapse include dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include] ==> [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/x86_64-unknown-linux-gnu]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//backward] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/backward]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        collapse include dir [/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include] ==> [/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+        implicit include dirs: [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include;/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include;/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/x86_64-unknown-linux-gnu;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/backward;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed;/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-uFCQfn']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_92476/fast]
+        ignore line: [/nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_92476.dir/build.make CMakeFiles/cmTC_92476.dir/build]
+        ignore line: [make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-uFCQfn']
+        ignore line: [Building CXX object CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++   -v -o CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o -c /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/g++]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92476.dir/']
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1plus -quiet -v -D_GNU_SOURCE -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=3 -idirafter /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include -idirafter /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_92476.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fPIC -fstack-protector-strong -fno-strict-overflow -frandom-seed=3npghm6fqx --param=ssp-buffer-size=4 -o /tmp/nix-shell.Sqc5W6/ccCaax03.s]
+        ignore line: [GNU C++17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.20-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include"]
+        ignore line: [ignoring nonexistent directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include]
+        ignore line: [ /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include]
+        ignore line: [ /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0/]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//x86_64-unknown-linux-gnu]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include/c++/13.2.0//backward]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        ignore line: [ /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: f5b68c6cb112a2f52a3f956ed0a25e71]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92476.dir/']
+        ignore line: [ /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o /tmp/nix-shell.Sqc5W6/ccCaax03.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41]
+        ignore line: [COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_92476]
+        ignore line: [/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92476.dir/link.txt --verbose=1]
+        ignore line: [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++  -v CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_92476 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'cmTC_92476' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib' '-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_92476.']
+        link line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell.Sqc5W6/ccz9vbK0.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib64/ld-linux-x86-64.so.2 -o cmTC_92476 /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o -rpath /home/lenovo/prep/cpp/outputs/out/lib -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o]
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/nix-shell.Sqc5W6/ccz9vbK0.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_92476] ==> ignore
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o] ==> obj [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o]
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o] ==> obj [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o]
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o] ==> obj [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+          arg [-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+          arg [-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+          arg [-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+          arg [-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+          arg [-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+          arg [-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+          arg [-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin] ==> dir [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..]
+          arg [-dynamic-linker=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/ld-linux-x86-64.so.2] ==> ignore
+          arg [CMakeFiles/cmTC_92476.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/lenovo/prep/cpp/outputs/out/lib] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o] ==> obj [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o]
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o] ==> obj [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o]
+        collapse library dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+        collapse library dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+        collapse library dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+        collapse library dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+        collapse library dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+        collapse library dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+        collapse library dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+        collapse library dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin] ==> [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib64]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o;/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o;/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o]
+        implicit dirs: [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib;/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib;/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib;/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0;/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib;/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib64;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/3.28.3/CompilerIdC/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-M0SlNp"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-M0SlNp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CPM_modules;"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-M0SlNp'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_a7124/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_a7124.dir/build.make CMakeFiles/cmTC_a7124.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-M0SlNp'
+        Building C object CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc   -v -o CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o -c /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/gcc
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a7124.dir/'
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1 -quiet -v -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=3 -idirafter /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include -idirafter /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a7124.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fPIC -fstack-protector-strong -fno-strict-overflow -frandom-seed=3npghm6fqx --param=ssp-buffer-size=4 -o /tmp/nix-shell.Sqc5W6/ccaoAh43.s
+        GNU C17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 13.2.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.20-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include"
+        ignoring duplicate directory "/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include"
+        ignoring duplicate directory "/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include"
+        ignoring nonexistent directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"
+        ignoring duplicate directory "/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include"
+        ignoring duplicate directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include
+         /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include
+         /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed
+         /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include
+        End of search list.
+        Compiler executable checksum: 5c9baf1c31f9d81546b5fb24209e0732
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a7124.dir/'
+         /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o /tmp/nix-shell.Sqc5W6/ccaoAh43.s
+        GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41
+        COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_a7124
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7124.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc  -v CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o -o cmTC_a7124 
+        Using built-in specs.
+        COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/gcc
+        COLLECT_LTO_WRAPPER=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c,c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 13.2.0 (GCC) 
+        COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'cmTC_a7124' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib' '-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a7124.'
+         /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell.Sqc5W6/cchwTHOr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib64/ld-linux-x86-64.so.2 -o cmTC_a7124 /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o -rpath /home/lenovo/prep/cpp/outputs/out/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o
+        COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'cmTC_a7124' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib' '-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a7124.'
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-M0SlNp'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include]
+          add: [/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include]
+          add: [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include]
+          add: [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+          add: [/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+        end of search list found
+        collapse include dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include] ==> [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include]
+        collapse include dir [/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include] ==> [/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include]
+        collapse include dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include] ==> [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include]
+        collapse include dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        collapse include dir [/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include] ==> [/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+        implicit include dirs: [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include;/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include;/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed;/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-M0SlNp']
+        ignore line: []
+        ignore line: [Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_a7124/fast]
+        ignore line: [/nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_a7124.dir/build.make CMakeFiles/cmTC_a7124.dir/build]
+        ignore line: [make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-M0SlNp']
+        ignore line: [Building C object CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc   -v -o CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o -c /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/gcc]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a7124.dir/']
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/cc1 -quiet -v -U _FORTIFY_SOURCE -U _FORTIFY_SOURCE -D _FORTIFY_SOURCE=3 -idirafter /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include -idirafter /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include -isystem /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include -isystem /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include -isystem /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_a7124.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -O2 -Wformat=1 -Wformat-security -Werror=format-security -version -fPIC -fstack-protector-strong -fno-strict-overflow -frandom-seed=3npghm6fqx --param=ssp-buffer-size=4 -o /tmp/nix-shell.Sqc5W6/ccaoAh43.s]
+        ignore line: [GNU C17 (GCC) version 13.2.0 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 13.2.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.20-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include"]
+        ignore line: [ignoring nonexistent directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include"]
+        ignore line: [ignoring duplicate directory "/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include]
+        ignore line: [ /nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include]
+        ignore line: [ /nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/include]
+        ignore line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed]
+        ignore line: [ /nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 5c9baf1c31f9d81546b5fb24209e0732]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a7124.dir/']
+        ignore line: [ /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/as -v --64 -o CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o /tmp/nix-shell.Sqc5W6/ccaoAh43.s]
+        ignore line: [GNU assembler version 2.41 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.41]
+        ignore line: [COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o' '-c' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_a7124]
+        ignore line: [/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7124.dir/link.txt --verbose=1]
+        ignore line: [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc  -v CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o -o cmTC_a7124 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: ../gcc-13.2.0/configure --prefix=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0 --with-gmp-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0-dev/include --with-gmp-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gmp-6.3.0/lib --with-mpfr-include=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1-dev/include --with-mpfr-lib=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-mpfr-4.2.1/lib --with-mpc=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-libmpc-1.3.1 --with-native-system-header-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-glibc-2.38-44-dev/include --with-build-sysroot=/ --with-gxx-include-dir=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-gcc-13.2.0/include/c++/13.2.0/ --program-prefix= --enable-lto --disable-libstdcxx-pch --without-included-gettext --with-system-zlib --enable-static --enable-languages=c c++ --disable-multilib --enable-plugin --disable-libcc1 --with-isl=/nix/store/eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee-isl-0.20 --disable-bootstrap --build=x86_64-unknown-linux-gnu --host=x86_64-unknown-linux-gnu --target=x86_64-unknown-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 13.2.0 (GCC) ]
+        ignore line: [COMPILER_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/:/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib/:/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64/:/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../]
+        ignore line: [COLLECT_GCC_OPTIONS='-fPIC' '-O2' '-U' '_FORTIFY_SOURCE' '-Wformat=1' '-Wformat-security' '-Werror=format-security' '-fstack-protector-strong' '--param=ssp-buffer-size=4' '-fno-strict-overflow' '-v' '-o' 'cmTC_a7124' '-U' '_FORTIFY_SOURCE' '-D' '_FORTIFY_SOURCE=3' '-B' '/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/' '-idirafter' '/nix/store/6jk1d1m5j9d8gjyq79zqlgqqs9j3gcwn-glibc-2.38-44-dev/include' '-idirafter' '/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/include-fixed' '-B' '/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-B' '/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/' '-frandom-seed=3npghm6fqx' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-isystem' '/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/include' '-isystem' '/nix/store/md11hw6x06xjgwjcg869cswb8wazyjhi-gtest-1.14.0-dev/include' '-isystem' '/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/include' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib' '-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib' '-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib' '-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib' '-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_a7124.']
+        link line: [ /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2 -plugin /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so -plugin-opt=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/nix-shell.Sqc5W6/cchwTHOr.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -m elf_x86_64 -dynamic-linker /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib64/ld-linux-x86-64.so.2 -o cmTC_a7124 /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib -L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib -L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib -L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib -L/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64 -L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../.. -dynamic-linker=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/ld-linux-x86-64.so.2 CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o -rpath /home/lenovo/prep/cpp/outputs/out/lib -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o /nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o]
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/libexec/gcc/x86_64-unknown-linux-gnu/13.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/nix-shell.Sqc5W6/cchwTHOr.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_a7124] ==> ignore
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o] ==> obj [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o]
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o] ==> obj [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o]
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o] ==> obj [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o]
+          arg [-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+          arg [-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+          arg [-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+          arg [-L/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+          arg [-L/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+          arg [-L/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+          arg [-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+          arg [-L/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+          arg [-L/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin] ==> dir [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64]
+          arg [-L/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..]
+          arg [-dynamic-linker=/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/ld-linux-x86-64.so.2] ==> ignore
+          arg [CMakeFiles/cmTC_a7124.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-rpath] ==> ignore
+          arg [/home/lenovo/prep/cpp/outputs/out/lib] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o] ==> obj [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o]
+          arg [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o] ==> obj [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o]
+        collapse library dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+        collapse library dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+        collapse library dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+        collapse library dir [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib] ==> [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib]
+        collapse library dir [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib] ==> [/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib]
+        collapse library dir [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib] ==> [/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib]
+        collapse library dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib] ==> [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib]
+        collapse library dir [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib] ==> [/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib]
+        collapse library dir [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin] ==> [/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../../../lib64] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib64]
+        collapse library dir [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/../../..] ==> [/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crt1.o;/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crti.o;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtbegin.o;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0/crtend.o;/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib/crtn.o]
+        implicit dirs: [/nix/store/7wz6hm9i8wljz0hgwz1wqmn2zlbgavrq-python3-3.11.8/lib;/nix/store/sgbyqhp4c33xsbvdzh6n7ks6fck468w0-gtest-1.14.0/lib;/nix/store/y7bx3zmi7s06aifbn5wb8pk6q9ik3nx5-gdb-14.1/lib;/nix/store/1rm6sr6ixxzipv5358x0cmaw8rs84g2j-glibc-2.38-44/lib;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib/gcc/x86_64-unknown-linux-gnu/13.2.0;/nix/store/agp6lqznayysqvqkx4k1ggr8n1rsyi8c-gcc-13.2.0-lib/lib;/nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib64;/nix/store/rqga421d43q40blrrgmiw820p01a4nba-gcc-13.2.0/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CheckFunctionExists.cmake:86 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindBLAS.cmake:372 (check_function_exists)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindBLAS.cmake:416 (check_blas_libraries)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Looking for sgemm_"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-6kj8pr"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-6kj8pr"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CPM_modules;;/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "BLAS_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-6kj8pr'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_ffaab/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_ffaab.dir/build.make CMakeFiles/cmTC_ffaab.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-6kj8pr'
+        Building C object CMakeFiles/cmTC_ffaab.dir/CheckFunctionExists.c.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_ffaab.dir/CheckFunctionExists.c.o -c /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-6kj8pr/CheckFunctionExists.c
+        Linking C executable cmTC_ffaab
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ffaab.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_ffaab.dir/CheckFunctionExists.c.o -o cmTC_ffaab 
+        /nix/store/j2y057vz3i19yh4zjsan1s3q256q15rd-binutils-2.41/bin/ld: CMakeFiles/cmTC_ffaab.dir/CheckFunctionExists.c.o: in function `main':
+        CheckFunctionExists.c:(.text.startup+0xc): undefined reference to `sgemm_'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_ffaab.dir/build.make:99: cmTC_ffaab] Error 1
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-6kj8pr'
+        make: *** [Makefile:127: cmTC_ffaab/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindBLAS.cmake:468 (find_package)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindLAPACK.cmake:247 (find_package)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/FindLAPACK.cmake:283 (_lapack_find_dependency)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/source/3rd_party/CMakeLists.txt:96 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-VOtDPH"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-VOtDPH"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CPM_modules;;/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-VOtDPH'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_9c237/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_9c237.dir/build.make CMakeFiles/cmTC_9c237.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-VOtDPH'
+        Building C object CMakeFiles/cmTC_9c237.dir/src.c.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_9c237.dir/src.c.o -c /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-VOtDPH/src.c
+        Linking C executable cmTC_9c237
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c237.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc CMakeFiles/cmTC_9c237.dir/src.c.o -o cmTC_9c237 
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-VOtDPH'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QoQSCK"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QoQSCK"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CPM_modules;;/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QoQSCK'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_5b47d/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_5b47d.dir/build.make CMakeFiles/cmTC_5b47d.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QoQSCK'
+        Building CXX object CMakeFiles/cmTC_5b47d.dir/src.cxx.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -fvisibility=hidden -o CMakeFiles/cmTC_5b47d.dir/src.cxx.o -c /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QoQSCK/src.cxx
+        Linking CXX executable cmTC_5b47d
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5b47d.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++ CMakeFiles/cmTC_5b47d.dir/src.cxx.o -o cmTC_5b47d 
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QoQSCK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-HvmgfM"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-HvmgfM"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CPM_modules;;/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-HvmgfM'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_f2a55/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_f2a55.dir/build.make CMakeFiles/cmTC_f2a55.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-HvmgfM'
+        Building CXX object CMakeFiles/cmTC_f2a55.dir/src.cxx.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fvisibility-inlines-hidden -o CMakeFiles/cmTC_f2a55.dir/src.cxx.o -c /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-HvmgfM/src.cxx
+        Linking CXX executable cmTC_f2a55
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2a55.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++ CMakeFiles/cmTC_f2a55.dir/src.cxx.o -o cmTC_f2a55 
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-HvmgfM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:105 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CPM_modules;;/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_5bf7f/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_5bf7f.dir/build.make CMakeFiles/cmTC_5bf7f.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9'
+        Building CXX object CMakeFiles/cmTC_5bf7f.dir/src.cxx.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++ -DCOMPILER_HAS_DEPRECATED_ATTR   -o CMakeFiles/cmTC_5bf7f.dir/src.cxx.o -c /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9/src.cxx
+        /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9/src.cxx: In function ‘int main()’:
+        /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9/src.cxx:2:33: warning: ‘int somefunc()’ is deprecated [-Wdeprecated-declarations]
+            2 |     int main() { return somefunc();}
+              |                         ~~~~~~~~^~
+        /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9/src.cxx:1:37: note: declared here
+            1 | __attribute__((__deprecated__)) int somefunc() { return 0; }
+              |                                     ^~~~~~~~
+        Linking CXX executable cmTC_5bf7f
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5bf7f.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/g++ CMakeFiles/cmTC_5bf7f.dir/src.cxx.o -o cmTC_5bf7f 
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-QdcQR9'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CheckSymbolExists.cmake:140 (try_compile)"
+      - "/nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/share/cmake-3.28/Modules/CheckSymbolExists.cmake:66 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/source/matplot/CMakeLists.txt:141 (check_symbol_exists)"
+    checks:
+      - "Looking for __fbufsize"
+    directories:
+      source: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-K4l1Ml"
+      binary: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-K4l1Ml"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/home/lenovo/prep/cpp/PathPlanning/build/standalone/CPM_modules;;/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/matplotplusplus-src/cmake"
+    buildResult:
+      variable: "HAVE_FBUFSIZE"
+      cached: true
+      stdout: |
+        Change Dir: '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-K4l1Ml'
+        
+        Run Build Command(s): /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E env VERBOSE=1 /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make -f Makefile cmTC_f1e6e/fast
+        /nix/store/19zx24xlq03ljfill0173a8fn046pvk8-gnumake-4.4.1/bin/make  -f CMakeFiles/cmTC_f1e6e.dir/build.make CMakeFiles/cmTC_f1e6e.dir/build
+        make[1]: Entering directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-K4l1Ml'
+        Building C object CMakeFiles/cmTC_f1e6e.dir/CheckSymbolExists.c.o
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc    -o CMakeFiles/cmTC_f1e6e.dir/CheckSymbolExists.c.o -c /home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-K4l1Ml/CheckSymbolExists.c
+        Linking C executable cmTC_f1e6e
+        /nix/store/17r6ld906midfv8y7997fd56s7a87vrg-cmake-3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f1e6e.dir/link.txt --verbose=1
+        /nix/store/kvlhk0gpm2iz1asbw1xjac2ch0r8kyw9-gcc-wrapper-13.2.0/bin/gcc CMakeFiles/cmTC_f1e6e.dir/CheckSymbolExists.c.o -o cmTC_f1e6e 
+        make[1]: Leaving directory '/home/lenovo/prep/cpp/PathPlanning/build/standalone/CMakeFiles/CMakeScratch/TryCompile-K4l1Ml'
+        
+      exitCode: 0
+...

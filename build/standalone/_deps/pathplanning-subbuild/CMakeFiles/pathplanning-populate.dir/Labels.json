@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/CMakeFiles/pathplanning-populate"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/CMakeFiles/pathplanning-populate.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/CMakeFiles/pathplanning-populate-complete.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-build.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-configure.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-download.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-install.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-patch.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-test.rule"
+		},
+		{
+			"file" : "/home/lenovo/prep/cpp/PathPlanning/build/standalone/_deps/pathplanning-subbuild/pathplanning-populate-prefix/src/pathplanning-populate-stamp/pathplanning-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pathplanning-populate"
+		],
+		"name" : "pathplanning-populate"
+	}
+}
